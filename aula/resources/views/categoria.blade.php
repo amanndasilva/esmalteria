@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Categoria</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -26,6 +27,8 @@
                 <br>
 
                 <button onclick id="submit">Salvar</button>
+
+                <img src="img/trem.jpg" alt="trem">
 
             </fieldset>
         </form>
