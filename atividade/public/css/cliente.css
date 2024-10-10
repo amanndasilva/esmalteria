@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #FFC0CB, #DB7093);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh;
+    margin: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    position: fixed; /* Fixa a nav no topo */
+    width: 100%;
+    top: 0;
+}
+
+.navbar a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #DB7093; /* Cor do texto */
+    padding: 15px 20px; /* Espaçamento interno */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 192, 203, 0.5); /* Cor ao passar o mouse */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+.box {
+    max-width: 600px; /* Define uma largura máxima */
+    width: 120%;
+    padding: 15px;
+    background-color: 	#FDF5E6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    margin-bottom: 20px; /* Espaço abaixo do formulário */
+    margin-top: 60px;
+}
+
+fieldset {
+    border: 1px solid #DB7093;
+    border-radius: 15px;
+}
+
+legend {
+    border: 1px solid #DB7093;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: #DB7093;
+    color: white;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: #DB7093;
+}
+
+#submit {
+    background-image: linear-gradient(to right, 	#FFB6C1, #DB7093);
+    width: 100%;
+    display: inline-block;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right, #DB7093,  #DB7093);
+}
+
+.foreach {
+    width: 85%; /* A tabela ocupará 85% da largura */
+    padding: 20px; /* Um pouco de espaço ao redor da tabela */
+    margin-top: 20px; /* Espaço entre a div e a tabela */
+    display: flex;
+    justify-content: center; /* Centraliza a tabela */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #DB7093;
+}
+
+td {
+    background-color: 	#FDF5E6;
+}
